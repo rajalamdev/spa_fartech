@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking Details</title>
+    <link rel="stylesheet" href="css/output.css" />
+  </head>
+
+  <body
+    class="bg-gradient-to-b from-[#EB85FF] via-[#FED1E7] via-10% to-white to-50% font-sans"
+  >
+  <!-- Navbar -->
+  <div class="container mx-auto fixed z-50 left-0 right-0 top-0">
+    <div class="flex justify-between items-center py-3 px-6 rounded-xl bg-white w-full mt-8 shadow relative">
+      <a class="flex items-center gap-3" href="#">
+        <img src="img/logo.png" alt="logo" />
+        <h1 class="font-bold text-2xl text-[#10062B]">Pijat</h1>
+      </a>
+      <div class="hidden md:flex gap-5 text-[#10062B]">
+        <a href="#" class="font-semibold">Home</a>
+        <a href="#" class="font-bold">Jasa</a>
+      </div>
+      <div class="hidden md:flex items-center gap-3">
+        <a class="bg-[#10062B] text-white rounded-full px-4 text-sm flex gap-2 py-3" href="#">
+            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.6665 1.66669V4.16669" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M13.3335 1.66669V4.16669" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M17.5 7.08335V11.3584C16.7583 10.7667 15.8167 10.4167 14.7917 10.4167C13.7667 10.4167 12.8083 10.775 12.0583 11.3833C11.05 12.175 10.4167 13.4167 10.4167 14.7917C10.4167 15.6084 10.65 16.3917 11.05 17.0417C11.3583 17.55 11.7583 17.9917 12.2333 18.3334H6.66667C3.75 18.3334 2.5 16.6667 2.5 14.1667V7.08335C2.5 4.58335 3.75 2.91669 6.66667 2.91669H13.3333C16.25 2.91669 17.5 4.58335 17.5 7.08335Z" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M5.8335 9.16669H10.8335" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M5.8335 13.3333H8.01683" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M19.1665 14.7917C19.1665 15.6084 18.9332 16.3917 18.5332 17.0417C18.2998 17.4417 18.0082 17.7917 17.6665 18.075C16.8998 18.7584 15.8998 19.1667 14.7915 19.1667C13.8332 19.1667 12.9498 18.8584 12.2332 18.3334C11.7582 17.9917 11.3582 17.55 11.0498 17.0417C10.6498 16.3917 10.4165 15.6084 10.4165 14.7917C10.4165 13.4167 11.0498 12.175 12.0582 11.3833C12.8082 10.775 13.7665 10.4167 14.7915 10.4167C15.8165 10.4167 16.7582 10.7667 17.4998 11.3584C18.5165 12.1584 19.1665 13.4 19.1665 14.7917Z" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M14.7918 16.875C14.7918 15.725 15.7252 14.7916 16.8752 14.7916C15.7252 14.7916 14.7918 13.8583 14.7918 12.7083C14.7918 13.8583 13.8585 14.7916 12.7085 14.7916C13.8585 14.7916 14.7918 15.725 14.7918 16.875Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            My Booking
+        </a>
+        <a class="border-2 border-[#10062B] text-[#10062B] rounded-full py-3 px-6 text-sm" href="#">Masuk</a>
+      </div>
+      <button id="hamburgerBtn" class="md:hidden flex items-center">
+        <svg class="w-6 h-6 text-[#10062B]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+      <div id="mobileMenu" class="hidden absolute top-full left-0 right-0 mt-2 bg-white rounded-xl shadow-md p-4 z-50 md:hidden">
+        <div class="flex flex-col gap-3 text-[#10062B]">
+          <a href="#" class="font-normal">Home</a>
+          <a href="#" class="font-bold">Jasa</a>
+          <a class="bg-[#10062B] text-white rounded-full py-2 px-4 text-sm text-center" href="#">My Booking</a>
+          <a class="border border-[#10062B] text-[#10062B] rounded-full py-2 px-4 text-sm text-center" href="#">Yoga</a>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="max-w-5xl mx-auto px-4 py-40">
+      <!-- Header -->
+      <div class="mb-6">
+        <h1 class="text-2xl font-bold">Booking #PJT193E4</h1>
+      </div>
+
+      <!-- Pesanan Section -->
+      <div class="bg-white rounded-xl p-6 shadow mb-6">
+        <p class="font-semibold mb-4">Pesanan</p>
+        <div
+          class="flex items-center flex-wrap gap-4 justify-between border border-gray-200 rounded-xl p-4"
+        >
+          <div class="flex items-center gap-4">
+            <img
+              src="img/detailsJasa.png"
+              class="rounded-xl w-20 h-20 object-cover"
+              alt="service"
+            />
+            <div>
+              <p class="font-semibold">Pijat Tradisional</p>
+              <p class="text-pink-500 font-semibold">Rp.45.000</p>
+            </div>
+          </div>
+          <button
+            class="px-6 py-2 border border-black rounded-full text-sm font-semibold"
+          >
+            Deposit
+          </button>
+        </div>
+      </div>
+
+      <!-- Informasi Pelanggan -->
+      <div class="bg-white rounded-xl p-6 shadow mb-6">
+        <p class="font-semibold mb-4">Informasi Pelanggan</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
+          <!-- Left -->
+          <div class="flex flex-col gap-2">
+            <label>Nama Lengkap</label>
+            <div
+              class="flex items-center gap-2 border-2 border-[#eee] rounded-full px-4 py-2"
+            >
+              <!-- SVG ICON -->
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  opacity="0.4"
+                  d="M12 2C9.38 2 7.25 4.13 7.25 6.75C7.25 9.32 9.26 11.4 11.88 11.49C11.96 11.48 12.04 11.48 12.1 11.49C12.12 11.49 12.13 11.49 12.15 11.49C12.16 11.49 12.16 11.49 12.17 11.49C14.73 11.4 16.74 9.32 16.75 6.75C16.75 4.13 14.62 2 12 2Z"
+                  fill="#FF48B6"
+                />
+                <path
+                  d="M17.08 14.15C14.29 12.29 9.73996 12.29 6.92996 14.15C5.65996 15 4.95996 16.15 4.95996 17.38C4.95996 18.61 5.65996 19.75 6.91996 20.59C8.31996 21.53 10.16 22 12 22C13.84 22 15.68 21.53 17.08 20.59C18.34 19.74 19.04 18.6 19.04 17.36C19.03 16.13 18.34 14.99 17.08 14.15Z"
+                  fill="#FF48B6"
+                />
+              </svg>
+
+              <span class="font-semibold">Yoga Pratama</span>
+            </div>
+            <label>Nomor Telepon</label>
+            <div
+              class="flex items-center gap-2 border-2 border-[#eee] rounded-full px-4 py-2"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  opacity="0.4"
+                  d="M11.79 14.21L8.52 17.48C8.16 17.16 7.81 16.83 7.47 16.49C6.44 15.45 5.51 14.36 4.68 13.22C3.86 12.08 3.2 10.94 2.72 9.81C2.24 8.67 2 7.58 2 6.54C2 5.86 2.12 5.21 2.36 4.61C2.6 4 2.98 3.44 3.51 2.94C4.15 2.31 4.85 2 5.59 2C5.87 2 6.15 2.06 6.4 2.18C6.66 2.3 6.89 2.48 7.07 2.74L9.39 6.01C9.57 6.26 9.7 6.49 9.79 6.71C9.88 6.92 9.93 7.13 9.93 7.32C9.93 7.56 9.86 7.8 9.72 8.03C9.59 8.26 9.4 8.5 9.16 8.74L8.4 9.53C8.29 9.64 8.24 9.77 8.24 9.93C8.24 10.01 8.25 10.08 8.27 10.16C8.3 10.24 8.33 10.3 8.35 10.36C8.53 10.69 8.84 11.12 9.28 11.64C9.73 12.16 10.21 12.69 10.73 13.22C11.09 13.57 11.44 13.91 11.79 14.21Z"
+                  fill="#FF48B6"
+                />
+                <path
+                  d="M21.9701 18.33C21.9701 18.61 21.9201 18.9 21.8201 19.18C21.7901 19.26 21.7601 19.34 21.7201 19.42C21.5501 19.78 21.3301 20.12 21.0401 20.44C20.5501 20.98 20.0101 21.37 19.4001 21.62C19.3901 21.62 19.3801 21.63 19.3701 21.63C18.7801 21.87 18.1401 22 17.4501 22C16.4301 22 15.3401 21.76 14.1901 21.27C13.0401 20.78 11.8901 20.12 10.7501 19.29C10.3601 19 9.9701 18.71 9.6001 18.4L12.8701 15.13C13.1501 15.34 13.4001 15.5 13.6101 15.61C13.6601 15.63 13.7201 15.66 13.7901 15.69C13.8701 15.72 13.9501 15.73 14.0401 15.73C14.2101 15.73 14.3401 15.67 14.4501 15.56L15.2101 14.81C15.4601 14.56 15.7001 14.37 15.9301 14.25C16.1601 14.11 16.3901 14.04 16.6401 14.04C16.8301 14.04 17.0301 14.08 17.2501 14.17C17.4701 14.26 17.7001 14.39 17.9501 14.56L21.2601 16.91C21.5201 17.09 21.7001 17.3 21.8101 17.55C21.9101 17.8 21.9701 18.05 21.9701 18.33Z"
+                  fill="#FF48B6"
+                />
+              </svg>
+              <span class="font-semibold">08123445678</span>
+            </div>
+          </div>
+          <!-- Right -->
+          <div class="flex flex-col gap-2">
+            <label>Alamat Email</label>
+            <div
+              class="flex items-center gap-2 border-2 border-[#eee] rounded-full px-4 py-2"
+            >
+              <svg
+                width="25"
+                height="24"
+                viewBox="0 0 25 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  opacity="0.4"
+                  d="M17.5 20.5H7.5C4.5 20.5 2.5 19 2.5 15.5V8.5C2.5 5 4.5 3.5 7.5 3.5H17.5C20.5 3.5 22.5 5 22.5 8.5V15.5C22.5 19 20.5 20.5 17.5 20.5Z"
+                  fill="#FF48B6"
+                />
+                <path
+                  d="M12.4998 12.87C11.6598 12.87 10.8098 12.61 10.1598 12.08L7.02978 9.58C6.70978 9.32 6.64978 8.85 6.90978 8.53C7.16978 8.21 7.63978 8.15 7.95978 8.41L11.0898 10.91C11.8498 11.52 13.1398 11.52 13.8998 10.91L17.0298 8.41C17.3498 8.15 17.8298 8.2 18.0798 8.53C18.3398 8.85 18.2898 9.33 17.9598 9.58L14.8298 12.08C14.1898 12.61 13.3398 12.87 12.4998 12.87Z"
+                  fill="#FF48B6"
+                />
+              </svg>
+
+              <span class="font-semibold">Yogapratama@gmail.com</span>
+            </div>
+            <label>Mulai Pada</label>
+            <div
+              class="flex items-center gap-2 border-2 border-[#eee] rounded-full px-4 py-2"
+            >
+              <!-- <svg width="20" height="20" fill="#FF48B6" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> -->
+              <svg
+                width="25"
+                height="24"
+                viewBox="0 0 25 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.2502 3.56V2C17.2502 1.59 16.9102 1.25 16.5002 1.25C16.0902 1.25 15.7502 1.59 15.7502 2V3.5H9.25023V2C9.25023 1.59 8.91023 1.25 8.50023 1.25C8.09023 1.25 7.75023 1.59 7.75023 2V3.56C5.05023 3.81 3.74023 5.42 3.54023 7.81C3.52023 8.1 3.76023 8.34 4.04023 8.34H20.9602C21.2502 8.34 21.4902 8.09 21.4602 7.81C21.2602 5.42 19.9502 3.81 17.2502 3.56Z"
+                  fill="#FF48B6"
+                />
+                <path
+                  opacity="0.4"
+                  d="M20.5 9.84C21.05 9.84 21.5 10.29 21.5 10.84V17C21.5 20 20 22 16.5 22H8.5C5 22 3.5 20 3.5 17V10.84C3.5 10.29 3.95 9.84 4.5 9.84H20.5Z"
+                  fill="#FF48B6"
+                />
+                <path
+                  d="M9 15C8.74 15 8.48 14.89 8.29 14.71C8.11 14.52 8 14.26 8 14C8 13.74 8.11 13.48 8.29 13.29C8.57 13.01 9.01 12.92 9.38 13.08C9.51 13.13 9.62 13.2 9.71 13.29C9.89 13.48 10 13.74 10 14C10 14.26 9.89 14.52 9.71 14.71C9.52 14.89 9.26 15 9 15Z"
+                  fill="#FF48B6"
+                />
+                <path
+                  d="M12.5 15C12.24 15 11.98 14.89 11.79 14.71C11.61 14.52 11.5 14.26 11.5 14C11.5 13.74 11.61 13.48 11.79 13.29C11.88 13.2 11.99 13.13 12.12 13.08C12.49 12.92 12.93 13.01 13.21 13.29C13.39 13.48 13.5 13.74 13.5 14C13.5 14.26 13.39 14.52 13.21 14.71C13.16 14.75 13.11 14.79 13.06 14.83C13 14.87 12.94 14.9 12.88 14.92C12.82 14.95 12.76 14.97 12.7 14.98C12.63 14.99 12.57 15 12.5 15Z"
+                  fill="#FF48B6"
+                />
+                <path
+                  d="M16 15C15.74 15 15.48 14.89 15.29 14.71C15.11 14.52 15 14.26 15 14C15 13.74 15.11 13.48 15.29 13.29C15.39 13.2 15.49 13.13 15.62 13.08C15.8 13 16 12.98 16.2 13.02C16.26 13.03 16.32 13.05 16.38 13.08C16.44 13.1 16.5 13.13 16.56 13.17C16.61 13.21 16.66 13.25 16.71 13.29C16.89 13.48 17 13.74 17 14C17 14.26 16.89 14.52 16.71 14.71C16.66 14.75 16.61 14.79 16.56 14.83C16.5 14.87 16.44 14.9 16.38 14.92C16.32 14.95 16.26 14.97 16.2 14.98C16.13 14.99 16.06 15 16 15Z"
+                  fill="#FF48B6"
+                />
+                <path
+                  d="M9 18.5C8.87 18.5 8.74 18.47 8.62 18.42C8.49 18.37 8.39 18.3 8.29 18.21C8.11 18.02 8 17.76 8 17.5C8 17.24 8.11 16.98 8.29 16.79C8.39 16.7 8.49 16.63 8.62 16.58C8.8 16.5 9 16.48 9.2 16.52C9.26 16.53 9.32 16.55 9.38 16.58C9.44 16.6 9.5 16.63 9.56 16.67C9.61 16.71 9.66 16.75 9.71 16.79C9.89 16.98 10 17.24 10 17.5C10 17.76 9.89 18.02 9.71 18.21C9.66 18.25 9.61 18.3 9.56 18.33C9.5 18.37 9.44 18.4 9.38 18.42C9.32 18.45 9.26 18.47 9.2 18.48C9.13 18.49 9.07 18.5 9 18.5Z"
+                  fill="#FF48B6"
+                />
+                <path
+                  d="M12.5 18.5C12.24 18.5 11.98 18.39 11.79 18.21C11.61 18.02 11.5 17.76 11.5 17.5C11.5 17.24 11.61 16.98 11.79 16.79C12.16 16.42 12.84 16.42 13.21 16.79C13.39 16.98 13.5 17.24 13.5 17.5C13.5 17.76 13.39 18.02 13.21 18.21C13.02 18.39 12.76 18.5 12.5 18.5Z"
+                  fill="#FF48B6"
+                />
+                <path
+                  d="M16 18.5C15.74 18.5 15.48 18.39 15.29 18.21C15.11 18.02 15 17.76 15 17.5C15 17.24 15.11 16.98 15.29 16.79C15.66 16.42 16.34 16.42 16.71 16.79C16.89 16.98 17 17.24 17 17.5C17 17.76 16.89 18.02 16.71 18.21C16.52 18.39 16.26 18.5 16 18.5Z"
+                  fill="#FF48B6"
+                />
+              </svg>
+
+              <span class="font-semibold">12/08/2030</span>
+            </div>
+          </div>
+        </div>
+        <div class="mt-4">
+          <label>Waktu Pemesanan</label>
+          <div
+            class="flex items-center gap-2 border-2 border-[#eee] rounded-full px-4 py-2 w-full"
+          >
+            <!-- <svg width="20" height="20" fill="#FF48B6" viewBox="0 0 24 24"><path d="M12 6v6l4 2"/></svg> -->
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_3253_625)">
+                <path
+                  d="M12 9V12L13.5 13.5M16.51 17.35L16.16 21.18C16.1149 21.6786 15.8845 22.1423 15.5142 22.4792C15.1439 22.8162 14.6607 23.002 14.16 23H9.83C9.32933 23.002 8.84611 22.8162 8.4758 22.4792C8.1055 22.1423 7.87506 21.6786 7.83 21.18L7.48 17.35M7.49 6.65L7.84 2.82C7.88491 2.32308 8.11393 1.86089 8.48211 1.52415C8.8503 1.18742 9.33105 1.00047 9.83 1H14.18C14.6807 0.99797 15.1639 1.1838 15.5342 1.52077C15.9045 1.85775 16.1349 2.32136 16.18 2.82L16.53 6.65M19 12C19 15.866 15.866 19 12 19C8.13401 19 5 15.866 5 12C5 8.13401 8.13401 5 12 5C15.866 5 19 8.13401 19 12Z"
+                  stroke="#FF48B6"
+                  stroke-opacity="0.7"
+                  stroke-width="4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_3253_625">
+                  <rect width="24" height="24" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+
+            <span class="font-semibold">14:00 - 16:00</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tambahan Produk Section -->
+      <div class="bg-white rounded-xl p-6 mb-6">
+        <p class="font-semibold mb-4">Tambahan Produk</p>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div
+            class="border-2 border-[#eee] hover:border-[#EB85FF] rounded-xl p-4 shadow text-center"
+          >
+            <img src="img/face-cleaner.png" class="mx-auto mb-2" />
+            <p class="font-semibold">Face Cleanser</p>
+            <p class="text-gray-500 text-sm">Skin</p>
+            <p class="text-blue-600 font-semibold">Rp 44.000</p>
+          </div>
+          <div
+            class="border-2 border-[#eee] hover:border-[#EB85FF] rounded-xl p-4 shadow text-center"
+          >
+            <img src="img/face-cleaner.png" class="mx-auto mb-2" />
+            <p class="font-semibold">Mosturaizer</p>
+            <p class="text-gray-500 text-sm">Skin</p>
+            <p class="text-blue-600 font-semibold">Rp 61.000</p>
+          </div>
+          <div
+            class="border-2 border-[#eee] hover:border-[#EB85FF] rounded-xl p-4 shadow text-center"
+          >
+            <img src="img/face-cleaner.png" class="mx-auto mb-2" />
+            <p class="font-semibold">Face Mask</p>
+            <p class="text-gray-500 text-sm">Skin</p>
+            <p class="text-blue-600 font-semibold">Rp 124.000</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Payment Details Section -->
+      <div class="p-6 mb-6">
+        <p class="font-semibold mb-4">Payment Details</p>
+        <div class="grid gap-6 sm:gap-4 text-sm">
+          <div class="flex justify-between flex-wrap gap-2 lg:gap-0">
+            <div class="flex gap-2">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M22 6V8.42C22 10 21 11 19.42 11H16V4.01C16 2.9 16.91 2 18.02 2C19.11 2.01 20.11 2.45 20.83 3.17C21.55 3.9 22 4.9 22 6Z"
+                  fill="#FF48B6"
+                />
+                <path
+                  opacity="0.4"
+                  d="M2 7V21C2 21.83 2.94001 22.3 3.60001 21.8L5.31 20.52C5.71 20.22 6.27 20.26 6.63 20.62L8.28999 22.29C8.67999 22.68 9.32001 22.68 9.71001 22.29L11.39 20.61C11.74 20.26 12.3 20.22 12.69 20.52L14.4 21.8C15.06 22.29 16 21.82 16 21V4C16 2.9 16.9 2 18 2H7H6C3 2 2 3.79 2 6V7Z"
+                  fill="#FF48B6"
+                />
+                <path
+                  d="M12 9.75H6C5.59 9.75 5.25 9.41 5.25 9C5.25 8.59 5.59 8.25 6 8.25H12C12.41 8.25 12.75 8.59 12.75 9C12.75 9.41 12.41 9.75 12 9.75Z"
+                  fill="#FF48B6"
+                />
+                <path
+                  d="M11.25 13.75H6.75C6.34 13.75 6 13.41 6 13C6 12.59 6.34 12.25 6.75 12.25H11.25C11.66 12.25 12 12.59 12 13C12 13.41 11.66 13.75 11.25 13.75Z"
+                  fill="#FF48B6"
+                />
+              </svg>
+              <span class="">Package Quantity</span>
+            </div>
+            <div class="flex flex-col gap-4">
+              <span class="font-bold"
+                >Pijat Tradisional
+                <span class="italic font-normal">Rp.150.000</span></span
+              >
+              <span class="font-bold"
+                >Mosturaizer
+                <span class="italic font-normal">Rp.150.000</span></span
+              >
+            </div>
+          </div>
+          <div class="flex justify-between flex-wrap gap-2 lg:gap-0">
+            <div class="flex gap-2">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  opacity="0.4"
+                  d="M2 12.97V6.99C2 4.23 4.24 2 7 2H17C19.76 2 22 4.23 22 6.99V13.97C22 16.72 19.76 18.95 17 18.95H15.5C15.19 18.95 14.89 19.1 14.7 19.35L13.2 21.34C12.54 22.22 11.46 22.22 10.8 21.34L9.3 19.35C9.14 19.13 8.78 18.95 8.5 18.95H7C4.24 18.95 2 16.72 2 13.97V12.97Z"
+                  fill="#FF48B6"
+                />
+                <path
+                  d="M17 8.75H7C6.59 8.75 6.25 8.41 6.25 8C6.25 7.59 6.59 7.25 7 7.25H17C17.41 7.25 17.75 7.59 17.75 8C17.75 8.41 17.41 8.75 17 8.75Z"
+                  fill="#FF48B6"
+                />
+                <path
+                  d="M13 13.75H7C6.59 13.75 6.25 13.41 6.25 13C6.25 12.59 6.59 12.25 7 12.25H13C13.41 12.25 13.75 12.59 13.75 13C13.75 13.41 13.41 13.75 13 13.75Z"
+                  fill="#FF48B6"
+                />
+              </svg>
+              <span class="">Consultation & Insurance</span>
+            </div>
+            <div class="flex flex-col gap-4">
+              <span class="font-bold">Rp. 0 (Free)</span>
+            </div>
+          </div>
+          <div class="flex justify-between flex-wrap gap-2 lg:gap-0">
+            <div class="flex gap-2 items-center">
+              <svg
+                width="24"
+                height="25"
+                viewBox="0 0 24 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  opacity="0.4"
+                  d="M9.41977 2.66L3.91977 4.72C2.86977 5.11 2.00977 6.35999 2.00977 7.47999V15.58C2.00977 16.39 2.53977 17.46 3.18977 17.94L8.68977 22.05C9.65977 22.78 11.2498 22.78 12.2198 22.05L17.7198 17.94C18.3698 17.45 18.8998 16.39 18.8998 15.58V7.47999C18.8998 6.35999 18.0398 5.11 16.9898 4.72L11.4898 2.66C10.9198 2.45 9.98977 2.45 9.41977 2.66Z"
+                  fill="#FF48B6"
+                />
+                <path
+                  d="M19.2601 7.26001H12.4102C12.2102 7.26001 12.0201 7.27002 11.8401 7.27002C10.1201 7.37002 9.66016 8.00002 9.66016 9.96002V10.35C9.66016 10.7642 9.99594 11.1 10.4102 11.1H21.2502C21.6644 11.1 22.0002 10.7642 22.0002 10.35V9.96002C22.0002 7.80002 21.4501 7.26001 19.2601 7.26001Z"
+                  fill="#FF48B6"
+                />
+                <path
+                  d="M10.4199 12.2C10.0057 12.2 9.66992 12.5358 9.66992 12.95V15.04C9.66992 17.2 10.2199 17.75 12.4099 17.75H19.2599C21.4099 17.75 21.9799 17.23 21.9999 15.16V12.95C21.9999 12.5358 21.6641 12.2 21.2499 12.2H10.4199ZM13.2699 15.97H12.0199C11.7199 15.97 11.4799 15.73 11.4799 15.43C11.4799 15.13 11.7199 14.89 12.0199 14.89H13.2699C13.5699 14.89 13.8099 15.13 13.8099 15.43C13.8099 15.73 13.5699 15.97 13.2699 15.97ZM17.3199 15.97H14.8299C14.5299 15.97 14.2899 15.73 14.2899 15.43C14.2899 15.13 14.5299 14.89 14.8299 14.89H17.3199C17.6199 14.89 17.8599 15.13 17.8599 15.43C17.8699 15.73 17.6199 15.97 17.3199 15.97Z"
+                  fill="#FF48B6"
+                />
+              </svg>
+              <span class="">Grand Total Amount</span>
+            </div>
+            <span class="font-bold text-[#FF48B6] text-2xl">Rp. 250.000</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Payment Method Section -->
+      <div class="p-6 max-w-xl mb-6">
+        <p class="font-semibold mb-4">Pembayaran</p>
+        <div class="border-2 p-4 rounded-xl border-[#eee]">
+          <p class="text-[#696969] mb-2">Debit card</p>
+          <div class="space-y-3 text-sm">
+            <label
+              class="flex items-center gap-2 border-2 border-[#eee] py-4 rounded-xl px-3 justify-between"
+            >
+              <div class="flex gap-2 items-center">
+                <img src="img/axim-bank.png" alt="" srcset="" />
+                <span>Axim Bank</span>
+              </div>
+              <span>**** **** **** 4578</span>
+              <input type="radio" name="bank" checked class="h-6 w-6" />
+            </label>
+            <label
+              class="flex items-center gap-2 border-2 border-[#eee] py-4 rounded-xl px-3 justify-between"
+            >
+              <div class="flex gap-2 items-center">
+                <img src="img/axim-bank.png" alt="" srcset="" />
+                <span>Axim Bank</span>
+              </div>
+              <span>**** **** **** 4578</span>
+              <input type="radio" name="bank" checked class="h-6 w-6" />
+            </label>
+            <label
+              class="flex items-center gap-2 border-2 border-[#eee] py-4 rounded-xl px-3 justify-between"
+            >
+              <div class="flex gap-2 items-center">
+                <img src="img/axim-bank.png" alt="" srcset="" />
+                <span>Axim Bank</span>
+              </div>
+              <span>**** **** **** 4578</span>
+              <input type="radio" name="bank" checked class="h-6 w-6" />
+            </label>
+            <label
+              class="flex items-center gap-2 border-2 border-[#eee] py-4 rounded-xl px-3 justify-between"
+            >
+              <div class="flex gap-2 items-center">
+                <img src="img/axim-bank.png" alt="" srcset="" />
+                <span>Axim Bank</span>
+              </div>
+              <span>**** **** **** 4578</span>
+              <input type="radio" name="bank" checked class="h-6 w-6" />
+            </label>
+            <button class="flex items-center gap-2">
+              <span>➕</span> Add New Cards
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pay Button -->
+      <div class="text-center">
+        <button
+          class="bg-pink-500 text-white font-semibold w-full py-3 rounded-full"
+        >
+          Bayar
+        </button>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-white mt-20 px-4 py-10">
+      <div
+        class="container mx-auto grid grid-cols-2 md:grid-cols-5 gap-8 text-sm text-[#0A142F]"
+      >
+        <div>
+          <img src="img/logo.png" alt="logo" class="mb-3 w-25" />
+        </div>
+        <div>
+          <p class="font-bold mb-2">Learn More</p>
+          <ul class="space-y-1">
+            <li><a href="#">Tentang Spa</a></li>
+            <li><a href="#">Kebijakan Privasi</a></li>
+            <li><a href="#">Lingkungan</a></li>
+            <li><a href="#">Hubungi Kami</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="font-bold mb-2">Tickets & Booking</p>
+          <ul class="space-y-1">
+            <li><a href="#">Booking Online</a></li>
+            <li><a href="#">Paket Spa</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="font-bold mb-2">Contact Us</p>
+          <ul class="space-y-1">
+            <li>
+              Spa Reservation: <span class="font-semibold">123-456-7890</span>
+            </li>
+            <li>Paket Spa: <span class="font-semibold">123-456-7890</span></li>
+          </ul>
+        </div>
+        <div>
+          <p class="font-bold mb-2">Social</p>
+          <div class="flex gap-6 text-xl">
+            <svg
+              width="9"
+              height="19"
+              viewBox="0 0 9 19"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5.64393 18.5204V10.1485H8.19782L8.57744 6.87068H5.64393V4.78282C5.64393 3.83695 5.88223 3.18935 7.10976 3.18935H8.66519V0.266963C7.90872 0.177075 7.14763 0.134174 6.38654 0.137238C4.12914 0.137238 2.57926 1.66125 2.57926 4.45902V6.86455H0.0419922V10.1424H2.5848V18.5204H5.64393Z"
+                fill="#0A142F"
+              />
+            </svg>
+            <svg
+              width="17"
+              height="19"
+              viewBox="0 0 17 19"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M12.5328 0.137207H4.2199C1.93408 0.137207 0.0634766 2.20497 0.0634766 4.73376V13.9269C0.0634766 16.4547 1.93408 18.5234 4.2199 18.5234H12.5328C14.8186 18.5234 16.6892 16.4547 16.6892 13.9269V4.73376C16.6892 2.20497 14.8186 0.137207 12.5328 0.137207ZM8.37633 13.1606C6.46312 13.1606 4.91257 11.4452 4.91257 9.33031C4.91257 7.21452 6.46312 5.49978 8.37633 5.49978C10.2887 5.49978 11.8401 7.21452 11.8401 9.33031C11.8401 11.4452 10.2887 13.1606 8.37633 13.1606ZM11.8401 4.35064C11.8401 4.98519 12.3048 5.49978 12.8792 5.49978C13.4536 5.49978 13.9183 4.98519 13.9183 4.35064C13.9183 3.71608 13.4536 3.2015 12.8792 3.2015C12.3048 3.2015 11.8401 3.71608 11.8401 4.35064Z"
+                fill="#0A142F"
+              />
+            </svg>
+            <svg
+              width="19"
+              height="17"
+              viewBox="0 0 19 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16.9908 4.24145C17.0028 4.42021 17.0028 4.59794 17.0028 4.77567C17.0028 10.2149 13.2593 16.4826 6.4178 16.4826C4.31003 16.4826 2.35189 15.8074 0.704102 14.6348C1.00336 14.6726 1.29154 14.6858 1.60281 14.6858C3.34205 14.6858 4.94273 14.0362 6.22199 12.9279C4.5862 12.8901 3.21551 11.7052 2.7426 10.075C2.97259 10.1128 3.2035 10.1383 3.44549 10.1383C3.77893 10.1383 4.11422 10.0872 4.42549 9.99838C2.71951 9.61636 1.4421 7.96057 1.4421 5.96056V5.90949C1.9381 6.21491 2.51353 6.40592 3.12314 6.43146C2.12098 5.69396 1.46427 4.43247 1.46427 3.00549C1.46427 2.24144 1.64807 1.54072 1.97043 0.929892C3.80202 3.42531 6.55542 5.05658 9.64226 5.23533C9.585 4.92889 9.5499 4.61122 9.5499 4.29253C9.5499 2.02489 11.2088 0.178101 13.2704 0.178101C14.3418 0.178101 15.3089 0.674528 15.9887 1.47739C16.8292 1.29864 17.6346 0.954407 18.3495 0.483516C18.0733 1.43858 17.485 2.24144 16.7137 2.75115C17.4628 2.66126 18.1888 2.43245 18.8557 2.11376C18.3495 2.92888 17.7168 3.65514 16.9908 4.24145Z"
+                fill="#0A142F"
+              />
+            </svg>
+            <svg
+              width="21"
+              height="17"
+              viewBox="0 0 21 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M18.7111 0.905785C19.5994 1.03378 20.4484 1.98915 20.5564 2.98548C20.9389 6.6369 20.9389 10.1777 20.5564 13.828C20.4484 14.8243 19.5994 15.7808 18.7111 15.9077C13.2945 16.652 7.81659 16.652 2.40149 15.9077C1.51238 15.7805 0.663404 14.8243 0.555384 13.828C0.172945 10.1774 0.172945 6.6369 0.555384 2.98548C0.663404 1.98915 1.51238 1.03349 2.40149 0.905785C7.81659 0.161451 13.2942 0.161451 18.7111 0.905785ZM8.84123 4.61494V12.1996L13.985 8.40743L8.84123 4.61494Z"
+                fill="#0A142F"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <p class="text-center text-xs text-gray-400 mt-10">
+        © 2024 Pijat | All Rights Reserved
+      </p>
+    </footer>
+    <script>
+      const hamburgerBtn = document.getElementById("hamburgerBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+
+      hamburgerBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="css/output.css" />
+  <title>Booking Success</title>
+</head>
+<body class="bg-gradient-to-b from-[#EB85FF] via-[#FED1E7] via-40% to-white to-90% font-sans min-h-screen">
+  
+  <!-- Navbar -->
+  <div class="container mx-auto fixed z-50 left-0 right-0 top-0">
+    <div class="flex justify-between items-center py-3 px-6 rounded-xl bg-white w-full mt-8 shadow relative">
+      <a class="flex items-center gap-3" href="#">
+        <img src="img/logo.png" alt="logo" />
+        <h1 class="font-bold text-2xl text-[#10062B]">Pijat</h1>
+      </a>
+      <div class="hidden md:flex gap-5 text-[#10062B]">
+        <a href="#" class="font-semibold">Home</a>
+        <a href="#" class="font-bold">Jasa</a>
+      </div>
+      <div class="hidden md:flex items-center gap-3">
+        <a class="bg-[#10062B] text-white rounded-full px-4 text-sm flex gap-2 py-3" href="#">
+            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.6665 1.66669V4.16669" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M13.3335 1.66669V4.16669" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M17.5 7.08335V11.3584C16.7583 10.7667 15.8167 10.4167 14.7917 10.4167C13.7667 10.4167 12.8083 10.775 12.0583 11.3833C11.05 12.175 10.4167 13.4167 10.4167 14.7917C10.4167 15.6084 10.65 16.3917 11.05 17.0417C11.3583 17.55 11.7583 17.9917 12.2333 18.3334H6.66667C3.75 18.3334 2.5 16.6667 2.5 14.1667V7.08335C2.5 4.58335 3.75 2.91669 6.66667 2.91669H13.3333C16.25 2.91669 17.5 4.58335 17.5 7.08335Z" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M5.8335 9.16669H10.8335" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M5.8335 13.3333H8.01683" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M19.1665 14.7917C19.1665 15.6084 18.9332 16.3917 18.5332 17.0417C18.2998 17.4417 18.0082 17.7917 17.6665 18.075C16.8998 18.7584 15.8998 19.1667 14.7915 19.1667C13.8332 19.1667 12.9498 18.8584 12.2332 18.3334C11.7582 17.9917 11.3582 17.55 11.0498 17.0417C10.6498 16.3917 10.4165 15.6084 10.4165 14.7917C10.4165 13.4167 11.0498 12.175 12.0582 11.3833C12.8082 10.775 13.7665 10.4167 14.7915 10.4167C15.8165 10.4167 16.7582 10.7667 17.4998 11.3584C18.5165 12.1584 19.1665 13.4 19.1665 14.7917Z" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M14.7918 16.875C14.7918 15.725 15.7252 14.7916 16.8752 14.7916C15.7252 14.7916 14.7918 13.8583 14.7918 12.7083C14.7918 13.8583 13.8585 14.7916 12.7085 14.7916C13.8585 14.7916 14.7918 15.725 14.7918 16.875Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            My Booking
+        </a>
+        <a class="border-2 border-[#10062B] text-[#10062B] rounded-full py-3 px-6 text-sm" href="#">Masuk</a>
+      </div>
+      <button id="hamburgerBtn" class="md:hidden flex items-center">
+        <svg class="w-6 h-6 text-[#10062B]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+      <div id="mobileMenu" class="hidden absolute top-full left-0 right-0 mt-2 bg-white rounded-xl shadow-md p-4 z-50 md:hidden">
+        <div class="flex flex-col gap-3 text-[#10062B]">
+          <a href="#" class="font-normal">Home</a>
+          <a href="#" class="font-bold">Jasa</a>
+          <a class="bg-[#10062B] text-white rounded-full py-2 px-4 text-sm text-center" href="#">My Booking</a>
+          <a class="border border-[#10062B] text-[#10062B] rounded-full py-2 px-4 text-sm text-center" href="#">Yoga</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container mx-auto grid grid-cols-1 lg:grid-cols-2 items-center justify-center gap-8 min-h-screen py-44 lg:py-0">
+    <div class="bg-white rounded-4xl p-8 max-w-md w-full shadow">
+      <p class="text-2xl text-center font-bold mb-4">Booking Finished!</p>
+      <p class="mb-2">Booking ID</p>
+      <div class="mb-8 flex items-center gap-3 border-2 border-[#eee] rounded-full py-2 px-4 w-full">
+        <svg width="2rem" height="2rem" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4.5 10V7C4.5 6.44772 4.94772 6 5.5 6H7.3125M4.5 10V20C4.5 20.5523 4.94772 21 5.5 21H18.5C19.0523 21 19.5 20.5523 19.5 20V10M4.5 10H19.5M19.5 10V7C19.5 6.44772 19.0523 6 18.5 6H16.2188M7.3125 6V3M7.3125 6H16.2188M16.2188 6V3" stroke="#FF48B6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M8 14L16 14" stroke="#FF48B6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <p class="font-bold">#PJT193E4</p>
+      </div>
+      <p>Gunakan kode booking di atas untuk memeriksa status pemesananmu</p>
+      <div class="flex flex-col">
+        <a href="services.html" class="my-5 text-center font-semibold bg-[#FF48B6] py-3 rounded-full text-white">Booking other packages</a>
+        <a href="my-booking.html" class="text-center font-semibold bg-white py-3 rounded-full text-[#FF48B6] border-2 border-[#FF48B6]">View My booking</a>
+      </div>
+    </div>
+    <img src="img/booking-success.png" alt="booking success" class="max-w-lg w-full" />
+  </div>
+
+
+  <script>
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    hamburgerBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

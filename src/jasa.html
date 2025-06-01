@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="css/output.css" rel="stylesheet" />
+    <title>Pijat | Services</title>
+  </head>
+
+  <body
+    class="bg-gradient-to-b from-[#EB85FF] via-[#FED1E7] via-10% to-white to-25%"
+  >
+  <!-- Navbar -->
+  <div class="container mx-auto fixed z-50 left-0 right-0 top-0">
+    <div class="flex justify-between items-center py-3 px-6 rounded-xl bg-white w-full mt-8 shadow relative">
+      <a class="flex items-center gap-3" href="#">
+        <img src="img/logo.png" alt="logo" />
+        <h1 class="font-bold text-2xl text-[#10062B]">Pijat</h1>
+      </a>
+      <div class="hidden md:flex gap-5 text-[#10062B]">
+        <a href="#" class="font-semibold">Home</a>
+        <a href="#" class="font-bold">Jasa</a>
+      </div>
+      <div class="hidden md:flex items-center gap-3">
+        <a class="bg-[#10062B] text-white rounded-full px-4 text-sm flex gap-2 py-3" href="#">
+            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.6665 1.66669V4.16669" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M13.3335 1.66669V4.16669" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M17.5 7.08335V11.3584C16.7583 10.7667 15.8167 10.4167 14.7917 10.4167C13.7667 10.4167 12.8083 10.775 12.0583 11.3833C11.05 12.175 10.4167 13.4167 10.4167 14.7917C10.4167 15.6084 10.65 16.3917 11.05 17.0417C11.3583 17.55 11.7583 17.9917 12.2333 18.3334H6.66667C3.75 18.3334 2.5 16.6667 2.5 14.1667V7.08335C2.5 4.58335 3.75 2.91669 6.66667 2.91669H13.3333C16.25 2.91669 17.5 4.58335 17.5 7.08335Z" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M5.8335 9.16669H10.8335" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M5.8335 13.3333H8.01683" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M19.1665 14.7917C19.1665 15.6084 18.9332 16.3917 18.5332 17.0417C18.2998 17.4417 18.0082 17.7917 17.6665 18.075C16.8998 18.7584 15.8998 19.1667 14.7915 19.1667C13.8332 19.1667 12.9498 18.8584 12.2332 18.3334C11.7582 17.9917 11.3582 17.55 11.0498 17.0417C10.6498 16.3917 10.4165 15.6084 10.4165 14.7917C10.4165 13.4167 11.0498 12.175 12.0582 11.3833C12.8082 10.775 13.7665 10.4167 14.7915 10.4167C15.8165 10.4167 16.7582 10.7667 17.4998 11.3584C18.5165 12.1584 19.1665 13.4 19.1665 14.7917Z" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M14.7918 16.875C14.7918 15.725 15.7252 14.7916 16.8752 14.7916C15.7252 14.7916 14.7918 13.8583 14.7918 12.7083C14.7918 13.8583 13.8585 14.7916 12.7085 14.7916C13.8585 14.7916 14.7918 15.725 14.7918 16.875Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            My Booking
+        </a>
+        <a class="border-2 border-[#10062B] text-[#10062B] rounded-full py-3 px-6 text-sm" href="#">Masuk</a>
+      </div>
+      <button id="hamburgerBtn" class="md:hidden flex items-center">
+        <svg class="w-6 h-6 text-[#10062B]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+      <div id="mobileMenu" class="hidden absolute top-full left-0 right-0 mt-2 bg-white rounded-xl shadow-md p-4 z-50 md:hidden">
+        <div class="flex flex-col gap-3 text-[#10062B]">
+          <a href="#" class="font-normal">Home</a>
+          <a href="#" class="font-bold">Jasa</a>
+          <a class="bg-[#10062B] text-white rounded-full py-2 px-4 text-sm text-center" href="#">My Booking</a>
+          <a class="border border-[#10062B] text-[#10062B] rounded-full py-2 px-4 text-sm text-center" href="#">Yoga</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Main Content -->
+    <main class="pt-40 container mx-auto">
+      <!-- Title & Search -->
+      <div
+        class="flex flex-col md:flex-row justify-between items-center mb-10 gap-4"
+      >
+        <h1 class="text-3xl font-bold text-[#0A142F]">Jasa Pijat</h1>
+        <div class="relative w-full md:w-1/3">
+          <input
+            type="text"
+            placeholder="Temukan Pijat Anda"
+            class="w-full px-5 py-3 bg-white rounded-full border border-gray-300 shadow-sm focus:outline-none focus:ring-2 focus:ring-pink-300"
+          />
+          <button class="absolute right-4 top-4 text-gray-500">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Service Categories -->
+      <section
+        class="bg-white rounded-3xl overflow-hidden border border-[#eee]"
+      >
+        <div class="bg-white p-6">
+          <h2 class="text-xl font-bold text-[#0A142F] mb-6">
+            Facial Treatment
+          </h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Card -->
+            <div class="border-2 border-[#eee] rounded-2xl p-4">
+              <img
+                src="img/terapidetails.png"
+                alt="Pijat Tradisional"
+                class="rounded-xl w-full aspect-video object-cover mb-3"
+              />
+              <h3 class="font-medium text-[#0A142F]">Pijat Tradisional</h3>
+              <p class="text-pink-500 font-semibold">Rp 150.000</p>
+            </div>
+            <div class="border-2 border-[#eee] rounded-2xl p-4">
+              <img
+                src="img/terapidetails.png"
+                alt="Aromatherapy Massage"
+                class="rounded-xl w-full aspect-video object-cover mb-3"
+              />
+              <h3 class="font-medium text-[#0A142F]">Aromatherapy Massage</h3>
+              <p class="text-pink-500 font-semibold">Rp 200.000</p>
+            </div>
+            <div class="border-2 border-[#eee] rounded-2xl p-4">
+              <img
+                src="img/terapidetails.png"
+                alt="Facial Treatment"
+                class="rounded-xl w-full aspect-video object-cover mb-3"
+              />
+              <h3 class="font-medium text-[#0A142F]">Facial Treatment</h3>
+              <p class="text-pink-500 font-semibold">Rp 125.000</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white p-6">
+          <h2 class="text-xl font-bold text-[#0A142F] mb-6">
+            Facial Treatment
+          </h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Card -->
+            <div class="border-2 border-[#eee] rounded-2xl p-4">
+              <img
+                src="img/terapidetails.png"
+                alt="Pijat Tradisional"
+                class="rounded-xl w-full aspect-video object-cover mb-3"
+              />
+              <h3 class="font-medium text-[#0A142F]">Pijat Tradisional</h3>
+              <p class="text-pink-500 font-semibold">Rp 150.000</p>
+            </div>
+            <div class="border-2 border-[#eee] rounded-2xl p-4">
+              <img
+                src="img/terapidetails.png"
+                alt="Aromatherapy Massage"
+                class="rounded-xl w-full aspect-video object-cover mb-3"
+              />
+              <h3 class="font-medium text-[#0A142F]">Aromatherapy Massage</h3>
+              <p class="text-pink-500 font-semibold">Rp 200.000</p>
+            </div>
+            <div class="border-2 border-[#eee] rounded-2xl p-4">
+              <img
+                src="img/terapidetails.png"
+                alt="Facial Treatment"
+                class="rounded-xl w-full aspect-video object-cover mb-3"
+              />
+              <h3 class="font-medium text-[#0A142F]">Facial Treatment</h3>
+              <p class="text-pink-500 font-semibold">Rp 125.000</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white p-6">
+          <h2 class="text-xl font-bold text-[#0A142F] mb-6">
+            Facial Treatment
+          </h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Card -->
+            <div class="border-2 border-[#eee] rounded-2xl p-4">
+              <img
+                src="img/terapidetails.png"
+                alt="Pijat Tradisional"
+                class="rounded-xl w-full aspect-video object-cover mb-3"
+              />
+              <h3 class="font-medium text-[#0A142F]">Pijat Tradisional</h3>
+              <p class="text-pink-500 font-semibold">Rp 150.000</p>
+            </div>
+            <div class="border-2 border-[#eee] rounded-2xl p-4">
+              <img
+                src="img/terapidetails.png"
+                alt="Aromatherapy Massage"
+                class="rounded-xl w-full aspect-video object-cover mb-3"
+              />
+              <h3 class="font-medium text-[#0A142F]">Aromatherapy Massage</h3>
+              <p class="text-pink-500 font-semibold">Rp 200.000</p>
+            </div>
+            <div class="border-2 border-[#eee] rounded-2xl p-4">
+              <img
+                src="img/terapidetails.png"
+                alt="Facial Treatment"
+                class="rounded-xl w-full aspect-video object-cover mb-3"
+              />
+              <h3 class="font-medium text-[#0A142F]">Facial Treatment</h3>
+              <p class="text-pink-500 font-semibold">Rp 125.000</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white p-6">
+          <h2 class="text-xl font-bold text-[#0A142F] mb-6">
+            Facial Treatment
+          </h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Card -->
+            <div class="border-2 border-[#eee] rounded-2xl p-4">
+              <img
+                src="img/terapidetails.png"
+                alt="Pijat Tradisional"
+                class="rounded-xl w-full aspect-video object-cover mb-3"
+              />
+              <h3 class="font-medium text-[#0A142F]">Pijat Tradisional</h3>
+              <p class="text-pink-500 font-semibold">Rp 150.000</p>
+            </div>
+            <div class="border-2 border-[#eee] rounded-2xl p-4">
+              <img
+                src="img/terapidetails.png"
+                alt="Aromatherapy Massage"
+                class="rounded-xl w-full aspect-video object-cover mb-3"
+              />
+              <h3 class="font-medium text-[#0A142F]">Aromatherapy Massage</h3>
+              <p class="text-pink-500 font-semibold">Rp 200.000</p>
+            </div>
+            <div class="border-2 border-[#eee] rounded-2xl p-4">
+              <img
+                src="img/terapidetails.png"
+                alt="Facial Treatment"
+                class="rounded-xl w-full aspect-video object-cover mb-3"
+              />
+              <h3 class="font-medium text-[#0A142F]">Facial Treatment</h3>
+              <p class="text-pink-500 font-semibold">Rp 125.000</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white mt-20 px-4 py-10">
+      <div
+        class="container mx-auto grid grid-cols-2 md:grid-cols-5 gap-8 text-sm text-[#0A142F]"
+      >
+        <div>
+          <img src="img/logo.png" alt="logo" class="mb-3 w-25" />
+        </div>
+        <div>
+          <p class="font-bold mb-2">Learn More</p>
+          <ul class="space-y-1">
+            <li><a href="#">Tentang Spa</a></li>
+            <li><a href="#">Kebijakan Privasi</a></li>
+            <li><a href="#">Lingkungan</a></li>
+            <li><a href="#">Hubungi Kami</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="font-bold mb-2">Tickets & Booking</p>
+          <ul class="space-y-1">
+            <li><a href="#">Booking Online</a></li>
+            <li><a href="#">Paket Spa</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="font-bold mb-2">Contact Us</p>
+          <ul class="space-y-1">
+            <li>
+              Spa Reservation: <span class="font-semibold">123-456-7890</span>
+            </li>
+            <li>Paket Spa: <span class="font-semibold">123-456-7890</span></li>
+          </ul>
+        </div>
+        <div>
+          <p class="font-bold mb-2">Social</p>
+          <div class="flex gap-6 text-xl">
+            <svg
+              width="9"
+              height="19"
+              viewBox="0 0 9 19"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5.64393 18.5204V10.1485H8.19782L8.57744 6.87068H5.64393V4.78282C5.64393 3.83695 5.88223 3.18935 7.10976 3.18935H8.66519V0.266963C7.90872 0.177075 7.14763 0.134174 6.38654 0.137238C4.12914 0.137238 2.57926 1.66125 2.57926 4.45902V6.86455H0.0419922V10.1424H2.5848V18.5204H5.64393Z"
+                fill="#0A142F"
+              />
+            </svg>
+            <svg
+              width="17"
+              height="19"
+              viewBox="0 0 17 19"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M12.5328 0.137207H4.2199C1.93408 0.137207 0.0634766 2.20497 0.0634766 4.73376V13.9269C0.0634766 16.4547 1.93408 18.5234 4.2199 18.5234H12.5328C14.8186 18.5234 16.6892 16.4547 16.6892 13.9269V4.73376C16.6892 2.20497 14.8186 0.137207 12.5328 0.137207ZM8.37633 13.1606C6.46312 13.1606 4.91257 11.4452 4.91257 9.33031C4.91257 7.21452 6.46312 5.49978 8.37633 5.49978C10.2887 5.49978 11.8401 7.21452 11.8401 9.33031C11.8401 11.4452 10.2887 13.1606 8.37633 13.1606ZM11.8401 4.35064C11.8401 4.98519 12.3048 5.49978 12.8792 5.49978C13.4536 5.49978 13.9183 4.98519 13.9183 4.35064C13.9183 3.71608 13.4536 3.2015 12.8792 3.2015C12.3048 3.2015 11.8401 3.71608 11.8401 4.35064Z"
+                fill="#0A142F"
+              />
+            </svg>
+            <svg
+              width="19"
+              height="17"
+              viewBox="0 0 19 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16.9908 4.24145C17.0028 4.42021 17.0028 4.59794 17.0028 4.77567C17.0028 10.2149 13.2593 16.4826 6.4178 16.4826C4.31003 16.4826 2.35189 15.8074 0.704102 14.6348C1.00336 14.6726 1.29154 14.6858 1.60281 14.6858C3.34205 14.6858 4.94273 14.0362 6.22199 12.9279C4.5862 12.8901 3.21551 11.7052 2.7426 10.075C2.97259 10.1128 3.2035 10.1383 3.44549 10.1383C3.77893 10.1383 4.11422 10.0872 4.42549 9.99838C2.71951 9.61636 1.4421 7.96057 1.4421 5.96056V5.90949C1.9381 6.21491 2.51353 6.40592 3.12314 6.43146C2.12098 5.69396 1.46427 4.43247 1.46427 3.00549C1.46427 2.24144 1.64807 1.54072 1.97043 0.929892C3.80202 3.42531 6.55542 5.05658 9.64226 5.23533C9.585 4.92889 9.5499 4.61122 9.5499 4.29253C9.5499 2.02489 11.2088 0.178101 13.2704 0.178101C14.3418 0.178101 15.3089 0.674528 15.9887 1.47739C16.8292 1.29864 17.6346 0.954407 18.3495 0.483516C18.0733 1.43858 17.485 2.24144 16.7137 2.75115C17.4628 2.66126 18.1888 2.43245 18.8557 2.11376C18.3495 2.92888 17.7168 3.65514 16.9908 4.24145Z"
+                fill="#0A142F"
+              />
+            </svg>
+            <svg
+              width="21"
+              height="17"
+              viewBox="0 0 21 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M18.7111 0.905785C19.5994 1.03378 20.4484 1.98915 20.5564 2.98548C20.9389 6.6369 20.9389 10.1777 20.5564 13.828C20.4484 14.8243 19.5994 15.7808 18.7111 15.9077C13.2945 16.652 7.81659 16.652 2.40149 15.9077C1.51238 15.7805 0.663404 14.8243 0.555384 13.828C0.172945 10.1774 0.172945 6.6369 0.555384 2.98548C0.663404 1.98915 1.51238 1.03349 2.40149 0.905785C7.81659 0.161451 13.2942 0.161451 18.7111 0.905785ZM8.84123 4.61494V12.1996L13.985 8.40743L8.84123 4.61494Z"
+                fill="#0A142F"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <p class="text-center text-xs text-gray-400 mt-10">
+        © 2024 Pijat | All Rights Reserved
+      </p>
+    </footer>
+    <script>
+      const hamburgerBtn = document.getElementById("hamburgerBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+
+      hamburgerBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
